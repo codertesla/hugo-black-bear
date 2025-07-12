@@ -1,7 +1,7 @@
 # Basic config
 baseURL = "https://example.com"
-theme = "hugo-bearcub"
-copyright = "John Doe (CC BY 4.0)"
+theme = "hugo-black-bear"
+copyright = "codertesla (CC BY 4.0)"
 defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
@@ -14,7 +14,7 @@ enableRobotsTXT = true
   [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
-    # This allows Bear Cub to use a variation of Dracula that is more accessible
+    # This allows hugo-black-bear to use a variation of Dracula that is more accessible
     # to people with poor eyesight. For more information about color contrast
     # and accessibility, see https://web.dev/color-and-contrast-accessibility/
     noClasses = false
@@ -23,23 +23,23 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "Bear Cub"
+    title = "hugo-black-bear"
     languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
-      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      madeWith = "Made with [hugo-black-bear](https://github.com/codertesla/hugo-black-bear)"
   [languages.pt]
-    title = "Bear Cub"
+    title = "hugo-black-bear"
     languageName = "pt-BR 🇧🇷"
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
     [languages.pt.params]
-      madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      madeWith = "Feito com [hugo-black-bear](https://github.com/codertesla/hugo-black-bear)"
 
 [params]
   # The description of your website
-  description = "Bear Cub Demo"
+  description = "hugo-black-bear Demo"
 
   # The path to your favicon
   favicon = "images/favicon.png"
@@ -52,7 +52,7 @@ enableRobotsTXT = true
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Bear Cub"
+  title = "hugo-black-bear"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
@@ -64,7 +64,7 @@ enableRobotsTXT = true
   hideUntranslated = false
 
   # (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
-  # "herman". The former is what you see on Bear Cub's demo (an optimized
+  # "herman". The former is what you see on hugo-black-bear's demo (an optimized
   # version of Hugo Bear Blog), while the latter has a more modern look based on
   # Herman Martinus's version of the Blogster Minimal theme for Astro.
   themeStyle = "original"
@@ -85,5 +85,5 @@ enableRobotsTXT = true
   # email is also added to the footer of each post. You can hide the "reply to"
   # link by using a `hideReply` param in front matter.
   [params.author]
-    name = "John Doe" # Your name as shown in the RSS feed metadata
-    email = "me@example.com" # Added to the footer so readers can reply to posts
+    name = "codertesla" # Your name as shown in the RSS feed metadata
+    email = "codertesla@example.com" # Added to the footer so readers can reply to posts

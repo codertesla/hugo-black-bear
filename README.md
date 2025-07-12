@@ -1,7 +1,7 @@
-# ᕦʕ •ᴥ•ʔᕤ Bear Cub
+# ᕦʕ •ᴥ•ʔᕤ hugo-black-bear
 
-[![github pages](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml)
-[![MIT license](https://img.shields.io/github/license/clente/hugo-bearcub)](https://github.com/clente/hugo-bearcub/blob/main/LICENSE)
+[![github pages](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml)
+[![MIT license](https://img.shields.io/github/license/codertesla/hugo-black-bear)](https://github.com/codertesla/hugo-black-bear/blob/main/LICENSE)
 
 ## Overview
 
@@ -9,18 +9,18 @@
 Blog](https://bearblog.dev) and [Hugo Bear
 Blog](https://github.com/janraasch/hugo-bearblog).
 
-**Bear Cub** takes care of speed and optimization, so you can focus on writing
+**hugo-black-bear** takes care of speed and optimization, so you can focus on writing
 good content. It is free, multilingual, optimized for search engines,
 no-nonsense, responsive, light, and fast. Really fast.
 
 ## Installation
 
 Follow Hugo's [quick start](https://gohugo.io/getting-started/quick-start/) to
-create an empty website and then clone **Bear Cub** into the themes directory as
+create an empty website and then clone **hugo-black-bear** into the themes directory as
 a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules):
 
 ```sh
-git submodule add https://github.com/clente/hugo-bearcub themes/hugo-bearcub
+git submodule add https://github.com/codertesla/hugo-black-bear themes/hugo-bearcub
 ```
 
 To finish off, append a line to the site configuration file:
@@ -38,26 +38,26 @@ Like [Bear Blog](https://bearblog.dev), this theme:
 - Has no trackers, ads, or scripts
 - Automatically generates an RSS feed
 
-But that's not all! **Bear Cub** is also...
+But that's not all! **hugo-black-bear** is also...
 
 ### Accessible
 
-**Bear Cub** has a few accessibility upgrades when compared to its predecessors.
+**hugo-black-bear** has a few accessibility upgrades when compared to its predecessors.
 The color palette has been overhauled to make sure everything is
 [readable](https://web.dev/color-and-contrast-accessibility/) for users with low
 vision impairments or color deficiencies, and some interactive elements were
 made bigger to facilitate [clicking](https://web.dev/accessible-tap-targets/)
 for users with a motor impairment.
 
-These small changes mean that **Bear Cub** passes Google's [PageSpeed
+These small changes mean that **hugo-black-bear** passes Google's [PageSpeed
 test](https://pagespeed.web.dev/report?url=https%3A%2F%2Fclente.github.io%2Fhugo-bearcub%2F)
 with flying colors.
 
-![PageSpeed score](https://raw.githubusercontent.com/clente/hugo-bearcub/main/images/pagespeed.webp)
+![PageSpeed score](https://raw.githubusercontent.com/codertesla/hugo-black-bear/main/images/pagespeed.webp)
 
 ### Secure
 
-[**Bear Cub**'s demo](https://clente.github.io/hugo-bearcub/) is hosted on GitHub
+[**hugo-black-bear**'s demo](https://codertesla.github.io/hugo-black-bear/) is hosted on GitHub
 and therefore I'm not in control of its [Content Security
 Policy](https://infosec.mozilla.org/guidelines/web_security#content-security-policy).
 However, the theme itself was made with security in mind: there are no inline
@@ -84,9 +84,9 @@ have to think about it again. My `_headers` file, for example, looks like this:
 
 ### Multilingual
 
-If you need to write a blog that supports more than one language, **Bear Cub**
+If you need to write a blog that supports more than one language, **hugo-black-bear**
 has you covered! Check out the demo's [`hugo.toml`
-file](https://github.com/clente/hugo-bearcub/blob/main/exampleSite/hugo.toml)
+file](https://github.com/codertesla/hugo-black-bear/blob/main/exampleSite/hugo.toml)
 for a sample of how you can setup multilingual support.
 
 By default, the theme creates a translation button that gets disabled when the
@@ -96,7 +96,7 @@ true`.
 
 ### More
 
-Every once in a while, as I keep using **Bear Cub**, I notice that there is some
+Every once in a while, as I keep using **hugo-black-bear**, I notice that there is some
 functionality missing. Currently, these are the "advanced features" that I have
 already implemented:
 
@@ -110,14 +110,14 @@ already implemented:
   rendering blank posts.
 - Skip link: a "skip to main content" link that is temporarily invisible, but
   can be focused by people who need a keyboard to navigate the web (see [PR
-  #5](https://github.com/clente/hugo-bearcub/pull/5) by
+  #5](https://github.com/codertesla/hugo-black-bear/pull/5) by
   [@2kool4idkwhat](https://github.com/2kool4idkwhat) for more information).
 - Reply by email: if you supply an email address, the theme creates a "Reply to
   this post by email" button at the end of every post (see Kev Quirk's [original
   implementation](https://kevquirk.com/adding-the-post-title-to-my-reply-by-email-button)).
   This button can be suppressed on a case-by-case by setting `hideReply: true`
   in a post's [front matter](https://gohugo.io/content-management/front-matter/)
-  (see [PR #18](https://github.com/clente/hugo-bearcub/pull/18) by
+  (see [PR #18](https://github.com/codertesla/hugo-black-bear/pull/18) by
   [@chrsmutti](https://github.com/chrsmutti)).
 - `absfigure` shortcode: a shortcut to use the `figure` shortcode that also
   converts relative URLs into absolute URLs by using the `absURL` function.
@@ -125,7 +125,7 @@ already implemented:
   writing the CSS you need in `assets/{custom_css}.css` and then including
   `style: "{custom_css}.css"` in the [front
   matter](https://gohugo.io/content-management/front-matter/) of said page.
-- Conditional CSS (EXPERIMENTAL): since **Bear Cub** does syntax highlighting
+- Conditional CSS (EXPERIMENTAL): since **hugo-black-bear** does syntax highlighting
   without inline styles (see `hugo.toml` for more information), it only load its
   `syntax.css` if, and only if, a code block is actually present in the current
   page.
@@ -138,13 +138,13 @@ already implemented:
   to a post, this template will generate one based on the title. You can see an
   example below.
 
-![Social card example](https://raw.githubusercontent.com/clente/hugo-bearcub/main/images/social_card.webp)
+![Social card example](https://raw.githubusercontent.com/codertesla/hugo-black-bear/main/images/social_card.webp)
 
 ## Configuration
 
-**Bear Cub** can be customized with a `hugo.toml` file. Check out the
-[configuration](https://github.com/clente/hugo-bearcub/blob/main/exampleSite/hugo.toml)
-of the [demo](https://clente.github.io/hugo-bearcub/) for more information.
+**hugo-black-bear** can be customized with a `hugo.toml` file. Check out the
+[configuration](https://github.com/codertesla/hugo-black-bear/blob/main/exampleSite/hugo.toml)
+of the [demo](https://codertesla.github.io/hugo-black-bear/) for more information.
 
 ```toml
 # Basic config
@@ -163,7 +163,7 @@ enableRobotsTXT = true
   [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
-    # This allows Bear Cub to use a variation of Dracula that is more accessible
+    # This allows hugo-black-bear to use a variation of Dracula that is more accessible
     # to people with poor eyesight. For more information about color contrast
     # and accessibility, see https://web.dev/color-and-contrast-accessibility/
     noClasses = false
@@ -172,23 +172,23 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "Bear Cub"
+    title = "hugo-black-bear"
     languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
-      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      madeWith = "Made with [hugo-black-bear](https://github.com/codertesla/hugo-black-bear)"
   [languages.pt]
-    title = "Bear Cub"
+    title = "hugo-black-bear"
     languageName = "pt-BR 🇧🇷"
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
     [languages.pt.params]
-      madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      madeWith = "Feito com [hugo-black-bear](https://github.com/codertesla/hugo-black-bear)"
 
 [params]
   # The description of your website
-  description = "Bear Cub Demo"
+  description = "hugo-black-bear Demo"
 
   # The path to your favicon
   favicon = "images/favicon.png"
@@ -201,7 +201,7 @@ enableRobotsTXT = true
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Bear Cub"
+  title = "hugo-black-bear"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
@@ -213,7 +213,7 @@ enableRobotsTXT = true
   hideUntranslated = false
 
   # (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
-  # "herman". The former is what you see on Bear Cub's demo (an optimized
+  # "herman". The former is what you see on hugo-black-bear's demo (an optimized
   # version of Hugo Bear Blog), while the latter has a more modern look based on
   # Herman Martinus's version of the Blogster Minimal theme for Astro.
   themeStyle = "original"
@@ -234,12 +234,12 @@ enableRobotsTXT = true
   # email is also added to the footer of each post. You can hide the "reply to"
   # link by using a `hideReply` param in front matter.
   [params.author]
-    name = "John Doe" # Your name as shown in the RSS feed metadata
-    email = "me@example.com" # Added to the footer so readers can reply to posts
+    name = "codertesla" # Your name as shown in the RSS feed metadata
+    email = "codertesla@example.com" # Added to the footer so readers can reply to posts
 ```
 
 ## Contributing
 
-If you come across any problems while using **Bear Cub**, you can file an
-[issue](https://github.com/clente/hugo-bearcub/issues) or create a [pull
-request](https://github.com/clente/hugo-bearcub/pulls).
+If you come across any problems while using **hugo-black-bear**, you can file an
+[issue](https://github.com/codertesla/hugo-black-bear/issues) or create a [pull
+request](https://github.com/codertesla/hugo-black-bear/pulls).
