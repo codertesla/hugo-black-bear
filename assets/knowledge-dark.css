@@ -84,7 +84,6 @@ body>* {
 }
 
 header,
-main,
 footer {
   max-width: 75ch;
   margin-inline: auto;
@@ -728,7 +727,7 @@ html {
 
 /* 响应式目录布局 */
 @media (min-width: 1280px) {
-  .post {
+  .post.with-toc {
     display: grid;
     grid-template-columns: 1fr 280px;
     gap: calc(var(--spacing-xl) * 2);
@@ -749,7 +748,7 @@ html {
 }
 
 @media (min-width: 1440px) {
-  .post {
+  .post.with-toc {
     grid-template-columns: 1fr 320px;
   }
 }
@@ -759,6 +758,13 @@ html {
     position: static;
     margin-bottom: var(--spacing-xl);
   }
+}
+
+.post:not(.with-toc),
+main>content {
+  max-width: 75ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ if not .Params.menu }}
-<article class="post">
+{{- $hasToc := and (gt .WordCount 400) (ne .Params.toc false) -}}
+<article class="post{{ if $hasToc }} with-toc{{ end }}">
   <header class="post-header">
     <h1>{{ .Title }}</h1>
     <div class="post-meta">
@@ -12,9 +13,11 @@
       {{- partial "reading-meta.html" . -}}
     </div>
   </header>
-  
+
+  {{- if $hasToc -}}
   {{- partial "toc.html" . -}}
-  
+  {{- end -}}
+
   <content class="post-content">
     {{ .Content }}
   </content>
@@ -22,16 +25,16 @@
 {{ end }}
 <p>
   {{ range (.GetTerms "tags") }}
-    <a class="blog-tags" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
+  <a class="blog-tags" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
   {{ end }}
 </p>
 {{ if not .Params.hideReply }}
 {{ with .Site.Params.author.email }}
-  <p>
-    <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>
-      {{ i18n "email-reply" }} ↪
-    </a>
-  </p>
+<p>
+  <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>
+    {{ i18n "email-reply" }} ↪
+  </a>
+</p>
 {{ end }}
 {{ end }}
 {{ end }}
