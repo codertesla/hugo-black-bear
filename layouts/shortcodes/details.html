@@ -1,0 +1,8 @@
+{{- $summary := .Get 0 | default "Click to expand" -}}
+{{- $open := .Get 1 | default false -}}
+<details {{ if $open }}open{{ end }} class="knowledge-details">
+  <summary>{{ $summary }}</summary>
+  <div class="details-content">
+    {{ .Inner | markdownify }}
+  </div>
+</details>

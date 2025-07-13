@@ -1,0 +1,10 @@
+{{- if and (gt .WordCount 400) (ne .Params.toc false) }}
+<aside class="toc">
+  <div class="toc-header">
+    <h4>{{ i18n "toc-title" | default "Table of Contents" }}</h4>
+  </div>
+  <nav class="toc-content">
+    {{ .TableOfContents }}
+  </nav>
+</aside>
+{{- end }}
