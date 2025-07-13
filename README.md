@@ -1,66 +1,69 @@
+English | [简体中文](README.zh-CN.md)
+***
+
 # ᕦʕ •ᴥ•ʔᕤ Hugo Black Bear
 
 [![GitHub Pages](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml)
 [![MIT license](https://img.shields.io/github/license/codertesla/hugo-black-bear)](https://github.com/codertesla/hugo-black-bear/blob/main/LICENSE)
 
-## 概览
+## Overview
 
-🐻 一款基于 [Bear Blog](https://bearblog.dev) 和 [Hugo Bear Blog](https://github.com/janraasch/hugo-bearblog) 的轻量级 [Hugo](https://gohugo.io/) 主题。
+🐻 A lightweight [Hugo](https://gohugo.io/) theme based on [Bear Blog](https://bearblog.dev) and [Hugo Bear Blog](https://github.com/janraasch/hugo-bearblog).
 
-**Hugo Black Bear** 专注于速度与优化，让您可以心无旁骛地创作优质内容。它免费、开源、支持多语言、对搜索引擎友好、设计简洁、响应迅速，并且速度快如闪电。
+**Hugo Black Bear** focuses on speed and optimization, so you can focus on writing good content. It's free, open-source, multilingual, SEO-friendly, minimalist, responsive, and lightning-fast.
 
-此版本经过特别优化，尤其适合用于构建**知识库**、**技术文档**和**指南类网站**。
+This version is specially optimized for building **knowledge bases**, **technical documentation**, and **how-to guides**.
 
-## 主要特性
+## Key Features
 
-- **极致性能**: Google PageSpeed 测试得分接近满分，页面加载体积仅约 5KB。
-- **专业知识库皮肤**: 内置专为知识分享设计的 `knowledge-dark` 暗色主题。
-- **全面的内容组件**: 提供信息块、可折叠内容、增强代码高亮、专业表格等。
-- **高度可访问性**: 优化的色彩对比度，符合 WCAG 标准，并提供“跳至主内容”链接。
-- **SEO 友好**: 自动生成 RSS 订阅、`robots.txt` 和 Open Graph / Twitter Cards 元数据。
-- **安全纯净**: 无 JavaScript、无追踪脚本、无广告，并遵循严格的内容安全策略。
-- **多语言支持**: 开箱即用的多语言模式配置。
+- **Extreme Performance**: Near-perfect Google PageSpeed scores with a page size of ~5KB.
+- **Professional Knowledge Base Skin**: Includes `knowledge-dark`, a theme designed for knowledge sharing.
+- **Comprehensive Content Components**: Provides info blocks, collapsible sections, enhanced code highlighting, professional tables, and more.
+- **Highly Accessible**: Optimized color contrast meeting WCAG standards, and includes a "skip to main content" link.
+- **SEO Friendly**: Automatically generates RSS feeds, `robots.txt`, and Open Graph / Twitter Cards metadata.
+- **Secure & Clean**: No JavaScript, no tracking scripts, no ads, and a strict Content Security Policy.
+- **Multilingual Support**: Out-of-the-box configuration for multilingual mode.
 
 ![PageSpeed score](https://raw.githubusercontent.com/codertesla/hugo-black-bear/main/images/pagespeed.webp)
 
-## 知识库功能展示
+## Knowledge Base Showcase
 
-我们引入了全新的 `knowledge-dark` 皮肤和一系列组件，旨在提升文档的可读性和专业性。
+We've introduced the new `knowledge-dark` skin and a set of components to enhance the readability and professionalism of your documentation.
 
-### 1. 优化的信息块
+### 1. Optimized Info Blocks
 
-使用样式优美的 `<blockquote>` 来突出显示重要信息、提示或警告。
+Use beautifully styled `<blockquote>` to highlight important information, tips, or warnings.
 
-> **提示**: `knowledge-dark` 皮肤为文档提供了卓越的排版和可读性。
+> **Tip**: The `knowledge-dark` skin provides excellent typography and readability for documentation.
 
-### 2. 可折叠内容
+### 2. Collapsible Content
 
-对于冗长的内容，例如安装说明或配置代码，可以使用可折叠的 `details` 短代码，保持页面整洁。
+For lengthy content like installation instructions or configuration code, use the collapsible `details` shortcode to keep your page clean.
 
 ```go-html-template
-{{</* details "点击查看安装指南" */>}}
-1. 克隆本仓库
-2. 安装依赖 `npm install`
-3. 运行开发服务器 `npm run dev`
+{{</* details "Click to see installation guide" */>}}
+1. Clone this repository
+2. Install dependencies with `npm install`
+3. Run the development server with `npm run dev`
 {{</* /details */>}}
 ```
 
-**效果:**
+**Result:**
 <details>
-<summary>点击查看安装指南</summary>
+<summary>Click to see installation guide</summary>
 
-1. 克隆本仓库
-2. 安装依赖 `npm install`
-3. 运行开发服务器 `npm run dev`
+1. Clone this repository
+2. Install dependencies with `npm install`
+3. Run the development server with `npm run dev`
 
 </details>
 
-### 3. 增强的代码高亮
+### 3. Enhanced Code Highlighting
 
-代码是技术文档的核心。本主题提供了清晰、易读的代码高亮方案。
+Code is the core of technical documentation. This theme provides a clear and readable code highlighting scheme.
 
 ```javascript
-// 示例：从 API 获取数据
+// Example: Fetch data from an API
 async function fetchUserData(userId) {
   try {
     const response = await fetch(`/api/users/${userId}`);
@@ -74,51 +77,51 @@ async function fetchUserData(userId) {
 }
 ```
 
-### 4. 专业的数据表格
+### 4. Professional Data Tables
 
-使用经过精心设计的表格来清晰地呈现结构化数据。
+Use well-designed tables to present structured data clearly.
 
-| 功能 | 描述 | 状态 |
+| Feature | Description | Status |
 |---|---|---|
-| 暗色主题 | 专业的暗色配色方案 | ✅ 已实现 |
-| 内容目录 | 自动生成页面导航 | ✅ 已实现 |
-| 折叠内容 | 组织长篇内容 | ✅ 已实现 |
-| 信息块 | 高亮重要信息 | ✅ 已实现 |
+| Dark Theme | Professional dark color scheme | ✅ Implemented |
+| Table of Contents | Auto-generated page navigation | ✅ Implemented |
+| Collapsible Sections | Organize long-form content | ✅ Implemented |
+| Info Blocks | Highlight important information | ✅ Implemented |
 
-## 安装
+## Installation
 
-遵循 Hugo 的[快速入门](https://gohugo.io/getting-started/quick-start/)创建一个新站点，然后将本主题作为 [Git 子模块](https://git-scm.com/book/en/v2/Git-Tools-Submodules)克隆到 `themes` 目录下：
+Follow Hugo's [quick start](https://gohugo.io/getting-started/quick-start/) to create a new site, then clone this theme as a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) into the `themes` directory:
 
 ```sh
 git submodule add https://github.com/codertesla/hugo-black-bear.git themes/hugo-black-bear
 ```
 
-最后，将下面这行添加到你的站点配置文件 `hugo.toml` 中：
+Finally, add the following line to your site's configuration file, `hugo.toml`:
 
 ```sh
 echo 'theme = "hugo-black-bear"' >> hugo.toml
 ```
 
-## 配置
+## Configuration
 
-通过 `hugo.toml` 文件可以轻松自定义你的网站。以下是一个示例配置，更多信息请参考[示例站点配置](https://github.com/codertesla/hugo-black-bear/blob/main/exampleSite/hugo.toml)。
+Easily customize your site via the `hugo.toml` file. Below is a sample configuration. For more details, refer to the [example site configuration](https://github.com/codertesla/hugo-black-bear/blob/main/exampleSite/hugo.toml).
 
 ```toml
-# 基础配置
+# Basic Configuration
 baseURL = "https://example.com"
 theme = "hugo-black-bear"
 copyright = "John Doe (CC BY 4.0)"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 
-# 语法高亮配置
+# Syntax Highlighting Configuration
 [markup]
   [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
-    noClasses = false # 确保 hugo-black-bear 可以应用自定义的无障碍高亮主题
+    noClasses = false # Ensures Hugo Black Bear can apply a custom, accessible highlight theme
 
-# 多语言模式配置
+# Multilingual Mode Configuration
 [languages]
   [languages.en]
     title = "My Knowledge Base"
@@ -129,33 +132,33 @@ enableRobotsTXT = true
       madeWith = "Made with [Hugo Black Bear](https://github.com/codertesla/hugo-black-bear)"
 
 [params]
-  # 网站描述
+  # Site Description
   description = "A knowledge base built with Hugo Black Bear"
 
-  # Favicon 路径
+  # Favicon Path
   favicon = "images/favicon.png"
 
-  # 社交媒体分享预览图
+  # Social Media Share Preview Image
   images = ["images/share.webp"]
 
-  # 日期格式
+  # Date Format
   dateFormat = "2006-01-02"
 
-  # (重要) 主题皮肤选择
-  # 可选项: "original", "herman", "knowledge-dark"
-  # "knowledge-dark" 是为知识库优化的全新暗色皮肤
+  # (Important) Theme Style Selection
+  # Options: "original", "herman", "knowledge-dark"
+  # "knowledge-dark" is the new dark skin optimized for knowledge bases
   themeStyle = "knowledge-dark"
 
-  # (可选) 动态生成社交分享图
-  # 如果文章没有在 front matter 中指定 `images`，将自动生成分享图
+  # (Optional) Dynamic Social Card Generation
+  # A social card will be automatically generated for posts without `images` in front matter
   generateSocialCard = true
 
-  # 作者信息，用于 RSS 和文章页脚的 "Reply by email"
+  # Author Information for RSS feed and "Reply by email" in post footers
   [params.author]
     name = "Your Name"
     email = "your.email@example.com"
 ```
 
-## 贡献
+## Contributing
 
-如果你在使用过程中遇到任何问题，欢迎提交 [Issue](https://github.com/codertesla/hugo-black-bear/issues) 或 [Pull Request](https://github.com/codertesla/hugo-black-bear/pulls)。
+If you encounter any issues while using this theme, feel free to open an [Issue](https://github.com/codertesla/hugo-black-bear/issues) or a [Pull Request](https://github.com/codertesla/hugo-black-bear/pulls). 
