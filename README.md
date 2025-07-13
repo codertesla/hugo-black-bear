@@ -5,6 +5,8 @@ English | [简体中文](README.zh-CN.md)
 
 [![GitHub Pages](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml)
 [![MIT license](https://img.shields.io/github/license/codertesla/hugo-black-bear)](https://github.com/codertesla/hugo-black-bear/blob/main/LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b8352b-7a24-4c40-9571-04987d60916a/deploy-status)](https://app.netlify.com/sites/hugo-black-bear-knowledge/deploys)
+[![Demo](https://img.shields.io/badge/Website-Demo-blue)](https://hugo-black-bear.pages.dev/)
 
 ## Overview
 
