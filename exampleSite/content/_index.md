@@ -1,6 +1,9 @@
 ---
 title: "Hugo Black Bear"
 description: "Your Professional Knowledge Hub"
+linkTitle: "Home"
+menu: "main"
+weight: 1
 ---
 
 ## Born for knowledge, simple yet powerful.

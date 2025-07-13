@@ -12,10 +12,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
     {{ $style := print (default "original" .Site.Params.themeStyle) ".css" | resources.Get | minify }}
-    <link rel="preload" href="{{ $style.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    </noscript>
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
     {{ if (.Page.Store.Get "hasCodeBlock") }}
     {{ $syntax := resources.Get "syntax.css" | minify }}
