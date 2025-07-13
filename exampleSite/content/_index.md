@@ -4,32 +4,26 @@ menu: "main"
 weight: 1
 ---
 
-# ᕦʕ •ᴥ•ʔᕤ Bear Cub
+# ᕦʕ •ᴥ•ʔᕤ Hugo Black Bear
 
-Today's websites are bloated, slow, and full of scripts, ads, and trackers. This
-became so commonplace that we lost all sense of perspective, to the point that
-we now think multi-megabyte webpages are normal.
+### Born for knowledge, simple yet powerful.
 
-> The internet has become a bloated mess. Huge JavaScript libraries, countless
-> client-side queries and overly complex frontend frameworks are par for the
-> course these days.
+On today's internet, bloated, slow websites filled with ads and trackers have become the norm. We believe that content itself should be the core.
+
+> The internet has become a bloated mess. Huge JavaScript libraries, countless client-side queries and overly complex frontend frameworks are par for the course these days.
 >
 > --- [Kev Quirk](https://512kb.club/)
 
-Let's change this, one website at a time! **Bear Cub** is a
-[Hugo](https://gohugo.io/) theme based on [Hugo
-Bear](https://github.com/janraasch/hugo-bearblog/) that takes care of speed and
-optimization, so you can focus on writing good content.
+**Hugo Black Bear** was built for this. It's a lightweight, fast [Hugo](https://gohugo.io/) theme designed for building **knowledge bases**, **technical documentation**, and **personal blogs**. We handle the speed, optimization, and technical details, so you can focus on creating truly valuable content.
 
-It is free, multilingual, optimized for search engines, no-nonsense, responsive,
-light, and fast. Really fast.
+### Core Advantages
 
-When compared to its predecessor, **Bear Cub** has a few
-[privacy](https://themarkup.org/blacklight?url=clente.github.io/hugo-bearcub/)
-and
-[accessibility](https://pagespeed.web.dev/report?url=https%3A%2F%2Fclente.github.io%2Fhugo-bearcub%2F)
-upgrades. It's also compatible with modern
-[security](https://github.com/clente/hugo-bearcub#secure) standards, so your
-users don't have to worry about browsing your website.
+-   **Optimized for Knowledge Bases**: Features a `knowledge-dark` theme designed for docs and guides, providing a professional, immersive reading experience.
+-   **Extreme Performance**: Site loads are around 5KB with a near-perfect Google PageSpeed score, ensuring a lightning-fast experience for visitors.
+-   **Powerful Features**: Supports rich content components like collapsible sections, info blocks, enhanced code highlighting, and professional data tables.
+-   **Pure and Secure**: No JavaScript, no trackers, no ads. We also configure a strict Content Security Policy for you.
+-   **Highly Accessible**: Optimized color contrast ensures content is clear and readable for all users.
 
-Made with 💟 by [Caio lente](https://lente.dev/en).
+We believe a good website should return to its essence: presenting information clearly, respecting user privacy, and providing the best reading experience.
+
+Get started building your site with **Hugo Black Bear**. Check out the [blog posts](/blog) to see more feature demonstrations.

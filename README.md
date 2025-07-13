@@ -1,245 +1,161 @@
-# ᕦʕ •ᴥ•ʔᕤ hugo-black-bear
+# ᕦʕ •ᴥ•ʔᕤ Hugo Black Bear
 
-[![github pages](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml)
+[![GitHub Pages](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/codertesla/hugo-black-bear/actions/workflows/gh-pages.yml)
 [![MIT license](https://img.shields.io/github/license/codertesla/hugo-black-bear)](https://github.com/codertesla/hugo-black-bear/blob/main/LICENSE)
 
-## Overview
+## 概览
 
-🐻 A lightweight [Hugo](https://gohugo.io/) theme based on [Bear
-Blog](https://bearblog.dev) and [Hugo Bear
-Blog](https://github.com/janraasch/hugo-bearblog).
+🐻 一款基于 [Bear Blog](https://bearblog.dev) 和 [Hugo Bear Blog](https://github.com/janraasch/hugo-bearblog) 的轻量级 [Hugo](https://gohugo.io/) 主题。
 
-**hugo-black-bear** takes care of speed and optimization, so you can focus on writing
-good content. It is free, multilingual, optimized for search engines,
-no-nonsense, responsive, light, and fast. Really fast.
+**Hugo Black Bear** 专注于速度与优化，让您可以心无旁骛地创作优质内容。它免费、开源、支持多语言、对搜索引擎友好、设计简洁、响应迅速，并且速度快如闪电。
 
-## Installation
+此版本经过特别优化，尤其适合用于构建**知识库**、**技术文档**和**指南类网站**。
 
-Follow Hugo's [quick start](https://gohugo.io/getting-started/quick-start/) to
-create an empty website and then clone **hugo-black-bear** into the themes directory as
-a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules):
+## 主要特性
 
-```sh
-git submodule add https://github.com/codertesla/hugo-black-bear themes/hugo-bearcub
-```
-
-To finish off, append a line to the site configuration file:
-
-```sh
-echo 'theme = "hugo-bearcub"' >> hugo.toml
-```
-
-## Features
-
-Like [Bear Blog](https://bearblog.dev), this theme:
-- Is free and open source
-- Looks great on any device
-- Makes tiny (~5kb), optimized, and awesome pages
-- Has no trackers, ads, or scripts
-- Automatically generates an RSS feed
-
-But that's not all! **hugo-black-bear** is also...
-
-### Accessible
-
-**hugo-black-bear** has a few accessibility upgrades when compared to its predecessors.
-The color palette has been overhauled to make sure everything is
-[readable](https://web.dev/color-and-contrast-accessibility/) for users with low
-vision impairments or color deficiencies, and some interactive elements were
-made bigger to facilitate [clicking](https://web.dev/accessible-tap-targets/)
-for users with a motor impairment.
-
-These small changes mean that **hugo-black-bear** passes Google's [PageSpeed
-test](https://pagespeed.web.dev/report?url=https%3A%2F%2Fclente.github.io%2Fhugo-bearcub%2F)
-with flying colors.
+- **极致性能**: Google PageSpeed 测试得分接近满分，页面加载体积仅约 5KB。
+- **专业知识库皮肤**: 内置专为知识分享设计的 `knowledge-dark` 暗色主题。
+- **全面的内容组件**: 提供信息块、可折叠内容、增强代码高亮、专业表格等。
+- **高度可访问性**: 优化的色彩对比度，符合 WCAG 标准，并提供“跳至主内容”链接。
+- **SEO 友好**: 自动生成 RSS 订阅、`robots.txt` 和 Open Graph / Twitter Cards 元数据。
+- **安全纯净**: 无 JavaScript、无追踪脚本、无广告，并遵循严格的内容安全策略。
+- **多语言支持**: 开箱即用的多语言模式配置。
 
 ![PageSpeed score](https://raw.githubusercontent.com/codertesla/hugo-black-bear/main/images/pagespeed.webp)
 
-### Secure
+## 知识库功能展示
 
-[**hugo-black-bear**'s demo](https://codertesla.github.io/hugo-black-bear/) is hosted on GitHub
-and therefore I'm not in control of its [Content Security
-Policy](https://infosec.mozilla.org/guidelines/web_security#content-security-policy).
-However, the theme itself was made with security in mind: there are no inline
-styles and it uses no JavaScript at all.
+我们引入了全新的 `knowledge-dark` 皮肤和一系列组件，旨在提升文档的可读性和专业性。
 
-If you want to improve your [Mozilla
-Observatory](https://observatory.mozilla.org/) score even further, you should be
-able to simply add a few headers to your hosting service's configuration (e.g.
-[Netlify](https://docs.netlify.com/routing/headers/) or [Cloudflare
-Pages](https://developers.cloudflare.com/pages/platform/headers/)) and never
-have to think about it again. My `_headers` file, for example, looks like this:
+### 1. 优化的信息块
 
-```
-/*
-  X-Content-Type-Options: nosniff
-  Strict-Transport-Security: "max-age=31536000; includeSubDomains; preload" env=HTTPS
-  Cache-Control: max-age=31536000, public
-  X-Frame-Options: deny
-  Referrer-Policy: no-referrer
-  Feature-Policy: microphone 'none'; payment 'none'; geolocation 'none'; midi 'none'; sync-xhr 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'
-  Content-Security-Policy: default-src 'none'; manifest-src 'self'; font-src 'self'; img-src 'self'; style-src 'self'; form-action 'none'; frame-ancestors 'none'; base-uri 'none'
-  X-XSS-Protection: 1; mode=block
+使用样式优美的 `<blockquote>` 来突出显示重要信息、提示或警告。
+
+> **提示**: `knowledge-dark` 皮肤为文档提供了卓越的排版和可读性。
+
+### 2. 可折叠内容
+
+对于冗长的内容，例如安装说明或配置代码，可以使用可折叠的 `details` 短代码，保持页面整洁。
+
+```go-html-template
+{{</* details "点击查看安装指南" */>}}
+1. 克隆本仓库
+2. 安装依赖 `npm install`
+3. 运行开发服务器 `npm run dev`
+{{</* /details */>}}
 ```
 
-### Multilingual
+**效果:**
+<details>
+<summary>点击查看安装指南</summary>
 
-If you need to write a blog that supports more than one language, **hugo-black-bear**
-has you covered! Check out the demo's [`hugo.toml`
-file](https://github.com/codertesla/hugo-black-bear/blob/main/exampleSite/hugo.toml)
-for a sample of how you can setup multilingual support.
+1. 克隆本仓库
+2. 安装依赖 `npm install`
+3. 运行开发服务器 `npm run dev`
 
-By default, the theme creates a translation button that gets disabled when the
-current page is only available in any other language. You can also choose to
-hide this button (instead of disabling it) by setting `hideUntranslated =
-true`.
+</details>
 
-### More
+### 3. 增强的代码高亮
 
-Every once in a while, as I keep using **hugo-black-bear**, I notice that there is some
-functionality missing. Currently, these are the "advanced features" that I have
-already implemented:
+代码是技术文档的核心。本主题提供了清晰、易读的代码高亮方案。
 
-- Full-text RSS feed: an enhanced RSS feed template that includes the (properly
-  encoded) full content of your posts in the feed itself.
-- Static content: you can create empty blog entries that act as links to static
-  files by including `link: "{url}"` in a post's [front
-  matter](https://gohugo.io/content-management/front-matter/). You can also add
-  `render: false` to your [build
-  options](https://gohugo.io/content-management/build-options/#readout) to avoid
-  rendering blank posts.
-- Skip link: a "skip to main content" link that is temporarily invisible, but
-  can be focused by people who need a keyboard to navigate the web (see [PR
-  #5](https://github.com/codertesla/hugo-black-bear/pull/5) by
-  [@2kool4idkwhat](https://github.com/2kool4idkwhat) for more information).
-- Reply by email: if you supply an email address, the theme creates a "Reply to
-  this post by email" button at the end of every post (see Kev Quirk's [original
-  implementation](https://kevquirk.com/adding-the-post-title-to-my-reply-by-email-button)).
-  This button can be suppressed on a case-by-case by setting `hideReply: true`
-  in a post's [front matter](https://gohugo.io/content-management/front-matter/)
-  (see [PR #18](https://github.com/codertesla/hugo-black-bear/pull/18) by
-  [@chrsmutti](https://github.com/chrsmutti)).
-- `absfigure` shortcode: a shortcut to use the `figure` shortcode that also
-  converts relative URLs into absolute URLs by using the `absURL` function.
-- Single-use CSS (EXPERIMENTAL): you can add some styles to a single page by
-  writing the CSS you need in `assets/{custom_css}.css` and then including
-  `style: "{custom_css}.css"` in the [front
-  matter](https://gohugo.io/content-management/front-matter/) of said page.
-- Conditional CSS (EXPERIMENTAL): since **hugo-black-bear** does syntax highlighting
-  without inline styles (see `hugo.toml` for more information), it only load its
-  `syntax.css` if, and only if, a code block is actually present in the current
-  page.
-- Alternative "Herman" style (EXPERIMENTAL): if you want to check out a more
-  modern CSS style, you can change the `themeStyle` parameter to `"herman"` in
-  order to activate [Herman Martinus's](https://herman.bearblog.dev/) version of
-  the [Blogster Minimal](https://blogster-minimal.netlify.app/) theme for
-  [Astro](https://astro.build/).
-- Dynamic social card generation (EXPERIMENTAL): if you don't add preview images
-  to a post, this template will generate one based on the title. You can see an
-  example below.
+```javascript
+// 示例：从 API 获取数据
+async function fetchUserData(userId) {
+  try {
+    const response = await fetch(`/api/users/${userId}`);
+    if (!response.ok) {
+      throw new Error('User not found');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching user:', error);
+  }
+}
+```
 
-![Social card example](https://raw.githubusercontent.com/codertesla/hugo-black-bear/main/images/social_card.webp)
+### 4. 专业的数据表格
 
-## Configuration
+使用经过精心设计的表格来清晰地呈现结构化数据。
 
-**hugo-black-bear** can be customized with a `hugo.toml` file. Check out the
-[configuration](https://github.com/codertesla/hugo-black-bear/blob/main/exampleSite/hugo.toml)
-of the [demo](https://codertesla.github.io/hugo-black-bear/) for more information.
+| 功能 | 描述 | 状态 |
+|---|---|---|
+| 暗色主题 | 专业的暗色配色方案 | ✅ 已实现 |
+| 内容目录 | 自动生成页面导航 | ✅ 已实现 |
+| 折叠内容 | 组织长篇内容 | ✅ 已实现 |
+| 信息块 | 高亮重要信息 | ✅ 已实现 |
+
+## 安装
+
+遵循 Hugo 的[快速入门](https://gohugo.io/getting-started/quick-start/)创建一个新站点，然后将本主题作为 [Git 子模块](https://git-scm.com/book/en/v2/Git-Tools-Submodules)克隆到 `themes` 目录下：
+
+```sh
+git submodule add https://github.com/codertesla/hugo-black-bear.git themes/hugo-black-bear
+```
+
+最后，将下面这行添加到你的站点配置文件 `hugo.toml` 中：
+
+```sh
+echo 'theme = "hugo-black-bear"' >> hugo.toml
+```
+
+## 配置
+
+通过 `hugo.toml` 文件可以轻松自定义你的网站。以下是一个示例配置，更多信息请参考[示例站点配置](https://github.com/codertesla/hugo-black-bear/blob/main/exampleSite/hugo.toml)。
 
 ```toml
-# Basic config
+# 基础配置
 baseURL = "https://example.com"
-theme = "hugo-bearcub"
+theme = "hugo-black-bear"
 copyright = "John Doe (CC BY 4.0)"
 defaultContentLanguage = "en"
-
-# Generate a nice robots.txt for SEO
 enableRobotsTXT = true
 
-# Setup syntax highlighting without inline styles. For more information about
-# why you'd want to avoid inline styles, see
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src#unsafe_inline_styles
+# 语法高亮配置
 [markup]
   [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
-    # This allows hugo-black-bear to use a variation of Dracula that is more accessible
-    # to people with poor eyesight. For more information about color contrast
-    # and accessibility, see https://web.dev/color-and-contrast-accessibility/
-    noClasses = false
+    noClasses = false # 确保 hugo-black-bear 可以应用自定义的无障碍高亮主题
 
-# Multilingual mode config. More for information about how to setup translation,
-# see https://gohugo.io/content-management/multilingual/
+# 多语言模式配置
 [languages]
   [languages.en]
-    title = "hugo-black-bear"
+    title = "My Knowledge Base"
     languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
-      madeWith = "Made with [hugo-black-bear](https://github.com/codertesla/hugo-black-bear)"
-  [languages.pt]
-    title = "hugo-black-bear"
-    languageName = "pt-BR 🇧🇷"
-    LanguageCode = "pt-BR"
-    contentDir = "content.pt"
-    [languages.pt.params]
-      madeWith = "Feito com [hugo-black-bear](https://github.com/codertesla/hugo-black-bear)"
+      madeWith = "Made with [Hugo Black Bear](https://github.com/codertesla/hugo-black-bear)"
 
 [params]
-  # The description of your website
-  description = "hugo-black-bear Demo"
+  # 网站描述
+  description = "A knowledge base built with Hugo Black Bear"
 
-  # The path to your favicon
+  # Favicon 路径
   favicon = "images/favicon.png"
 
-  # These images will show up when services want to generate a preview of a link
-  # to your site. Ignored if `generateSocialCard = true`. For more information
-  # about previews, see https://gohugo.io/templates/internal#twitter-cards and
-  # https://gohugo.io/templates/internal#open-graph
+  # 社交媒体分享预览图
   images = ["images/share.webp"]
 
-  # This title is used as the site_name on the Hugo's internal opengraph
-  # structured data template
-  title = "hugo-black-bear"
-
-  # Dates are displayed following the format below. For more information about
-  # formatting, see https://gohugo.io/functions/format/
+  # 日期格式
   dateFormat = "2006-01-02"
 
-  # If your blog is multilingual but you haven't translated a page, this theme
-  # will create a disabled link. By setting `hideUntranslated` to true, you can
-  # have the theme simply not show any link
-  hideUntranslated = false
+  # (重要) 主题皮肤选择
+  # 可选项: "original", "herman", "knowledge-dark"
+  # "knowledge-dark" 是为知识库优化的全新暗色皮肤
+  themeStyle = "knowledge-dark"
 
-  # (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
-  # "herman". The former is what you see on hugo-black-bear's demo (an optimized
-  # version of Hugo Bear Blog), while the latter has a more modern look based on
-  # Herman Martinus's version of the Blogster Minimal theme for Astro.
-  themeStyle = "original"
-
-  # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
-  # for posts that don't have `images` defined in their front matter; By setting
-  # `generateSocialCard` to false, you can prevent this behavior. For more
-  # information see layouts/partials/social_card.html
+  # (可选) 动态生成社交分享图
+  # 如果文章没有在 front matter 中指定 `images`，将自动生成分享图
   generateSocialCard = true
 
-  # Social media. Delete any item you aren't using to make sure it won't show up
-  # in your website's metadata.
-  [params.social]
-    twitter = "example" # Twitter handle (without '@')
-    facebook_admin = "0000000000" # Facebook Page Admin ID
-
-  # Author metadata. This is mostly used for the RSS feed of your site, but the
-  # email is also added to the footer of each post. You can hide the "reply to"
-  # link by using a `hideReply` param in front matter.
+  # 作者信息，用于 RSS 和文章页脚的 "Reply by email"
   [params.author]
-    name = "codertesla" # Your name as shown in the RSS feed metadata
-    email = "codertesla@example.com" # Added to the footer so readers can reply to posts
+    name = "Your Name"
+    email = "your.email@example.com"
 ```
 
-## Contributing
+## 贡献
 
-If you come across any problems while using **hugo-black-bear**, you can file an
-[issue](https://github.com/codertesla/hugo-black-bear/issues) or create a [pull
-request](https://github.com/codertesla/hugo-black-bear/pulls).
+如果你在使用过程中遇到任何问题，欢迎提交 [Issue](https://github.com/codertesla/hugo-black-bear/issues) 或 [Pull Request](https://github.com/codertesla/hugo-black-bear/pulls)。
