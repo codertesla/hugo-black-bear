@@ -23,7 +23,7 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "hugo-black-bear"
+    title = "Hugo Black Bear"
     languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
@@ -40,6 +40,9 @@ enableRobotsTXT = true
 [params]
   # The description of your website
   description = "hugo-black-bear Demo"
+  
+  # Optional tagline displayed under the site title
+  tagline = "Your Professional Knowledge Hub"
 
   # The path to your favicon
   favicon = "images/favicon.png"
