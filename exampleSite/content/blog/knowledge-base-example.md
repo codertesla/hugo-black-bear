@@ -3,14 +3,9 @@ title: "Knowledge Base Features Demo"
 date: 2024-01-13
 tags: ["demo", "features", "knowledge-base"]
 author: "Hugo Black Bear Team"
-toc: true
 ---
 
 This article demonstrates the enhanced features of the Hugo Black Bear theme optimized for knowledge bases and documentation sites.
-
-## Table of Contents
-
-The table of contents is automatically generated for articles with more than 400 words. You can disable it by setting `toc: false` in the front matter.
 
 ## Styled Blockquotes
 

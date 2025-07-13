@@ -1,7 +1,6 @@
 {{ define "main" }}
 {{ if not .Params.menu }}
-{{- $hasToc := and (gt .WordCount 400) (ne .Params.toc false) -}}
-<article class="post{{ if $hasToc }} with-toc{{ end }}">
+<article class="post">
   <header class="post-header">
     <h1>{{ .Title }}</h1>
     <div class="post-meta">
@@ -13,10 +12,6 @@
       {{- partial "reading-meta.html" . -}}
     </div>
   </header>
-
-  {{- if $hasToc -}}
-  {{- partial "toc.html" . -}}
-  {{- end -}}
 
   <content class="post-content">
     {{ .Content }}
