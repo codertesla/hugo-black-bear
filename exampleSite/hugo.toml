@@ -1,5 +1,5 @@
 # Basic config
-baseURL = "https://example.com"
+baseURL = "https://hugo-black-bear.pages.dev"
 theme = "hugo-black-bear"
 copyright = "codertesla (CC BY 4.0)"
 defaultContentLanguage = "en"
