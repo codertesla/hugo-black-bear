@@ -24,7 +24,7 @@ This version is specially optimized for building **knowledge bases**, **technica
 - **Secure & Clean**: No JavaScript, no tracking scripts, no ads, and a strict Content Security Policy.
 - **Multilingual Support**: Out-of-the-box configuration for multilingual mode.
 
-![PageSpeed score](https://raw.githubusercontent.com/codertesla/hugo-black-bear/main/images/pagespeed.webp)
+![PageSpeed score](https://raw.githubusercontent.com/codertesla/hugo-black-bear/main/images/pagespeed.avif)
 
 ## Knowledge Base Showcase
 
@@ -136,7 +136,7 @@ enableRobotsTXT = true
   description = "A knowledge base built with Hugo Black Bear"
 
   # Favicon Path
-  favicon = "images/favicon.png"
+  favicon = "images/favicon.svg"
 
   # Social Media Share Preview Image
   images = ["images/share.webp"]

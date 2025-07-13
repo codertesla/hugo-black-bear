@@ -24,7 +24,7 @@
 - **安全纯净**: 无 JavaScript、无追踪脚本、无广告，并遵循严格的内容安全策略。
 - **多语言支持**: 开箱即用的多语言模式配置。
 
-![PageSpeed score](https://raw.githubusercontent.com/codertesla/hugo-black-bear/main/images/pagespeed.webp)
+![PageSpeed score](https://raw.githubusercontent.com/codertesla/hugo-black-bear/main/images/pagespeed.avif)
 
 ## 知识库功能展示
 
