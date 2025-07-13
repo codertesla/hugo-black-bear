@@ -17,8 +17,8 @@
   /* 文本颜色层次 - 提升可读性 */
   --color-text-primary: #e6edf3;
   /* 主文本：柔和白色 */
-  --color-text-secondary: #8b949e;
-  /* 次要文本：中性灰 */
+  --color-text-secondary: #a0aab5;
+  /* 次要文本：中性灰 (对比度已调整) */
   --color-text-muted: #6e7681;
   /* 弱化文本：深灰 */
 
@@ -421,7 +421,8 @@ ul.blog-posts li span {
   letter-spacing: 0.05em;
   margin-top: calc(-1 * var(--spacing-sm));
   margin-bottom: var(--spacing-lg);
-  opacity: 0.8;
+  opacity: 1;
+  /* 移除透明度以保证对比度 */
   transition: opacity 0.3s ease;
 }
 

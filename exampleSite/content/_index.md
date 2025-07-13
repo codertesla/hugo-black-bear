@@ -1,12 +1,11 @@
 ---
-title: "Home"
-menu: "main"
-weight: 1
+title: "Hugo Black Bear"
+description: "Your Professional Knowledge Hub"
 ---
 
-# ᕦʕ •ᴥ•ʔᕤ Hugo Black Bear
+## Born for knowledge, simple yet powerful.
 
-### Born for knowledge, simple yet powerful.
+The internet has become a bloated mess. Huge JavaScript libraries, countless client-side requests, and gigantic images are all too common. This theme is different.
 
 On today's internet, bloated, slow websites filled with ads and trackers have become the norm. We believe that content itself should be the core.
 
